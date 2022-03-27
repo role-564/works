@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>米津玄師</title>
+    <div class="linkCSS">
+        <link rel="icon" type="image/x-icon" href="./Image/安康魚.jpg">
+        <link rel="stylesheet" href="./Sidenav.css">
+        <link rel="stylesheet" href="./Slideshow.css">
+        <link rel="stylesheet" href="./upTop.css">
+        <link rel="stylesheet" href="./topnav.css">
+
+    </div>
+    <div class="linkJS">
+        <script type="text/javascript" src="./upTop.js"></script>
+        <script type="text/javascript" src="./showSlides.js"></script>
+
+    </div>
+
+
+    <style>
+        header {
+            position: top center;
+            font-size: 80px;
+            margin-top: 50px;
+            margin-left: 30%;
+        }
+        
+        .about {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 50px;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        
+        h2 {
+            text-align: left;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+   
+
+    </style>
+
+</head>
+
+<body>
+    <!-- ---懸浮式菜單 -->
+    <div id="mySidenav" class="sidenav">
+        <a href="./Page.html" id="introduction">引言</a>
+        <a href="./about.html" id="about">生平事蹟</a>
+        <a href="./turningPoint.html" id="turningPoint">轉捩點</a>
+        <a href="./ideas.html" id="ideas">創作理念</a>
+        <a href="./musicStyle.html" id="musicStyle">音樂風格</a>
+        <a href="./AwardRecord.html" id="AwardRecord">代表曲目</a>
+
+    </div>
+
+
+    <!-- 幻燈片 -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./Image/米3.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./Image/米1.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Image/米2.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Image/米4.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <br>
+
+
+    <!-- 自動幻燈片 -->
+    <!-- <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+   
+</script> -->
+
+    <!-- 手動切換幻燈片 -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+     <!-- 回到頂端 -->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+   
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <br>
+    <hr>
+    <main class="about">
+    
+        <h1>生平事蹟</h1>
+        <h2>
+            1991年出生在日本德島縣德島市的米津玄師，家中有父母以及一個姊姊。米津玄師認為自己的家庭是個不管是精神還是肉體都很貧窮的家庭，他曾在受訪時說過「在我活了24年這段時間裡，我覺得和父親說話的時間加在一起大概也就一個小時左右吧。」讓人訝異於與父親關係如此疏離的同時，作為一個在家中極少發言的孩子，米津玄師曾這樣形容自己「我好像一直都是個局外人」，因為不知道該說什麼，而選擇用沈默來應對。 米津玄師在國三時，曾與同學組了一個樂隊，上了高中後因為理念不同而解散了。在高中畢業後他便搬去了大阪唸美術專業學校，卻在一年後因為覺得無聊而毅然決然地休學，全心投入了音樂與創作。<br> <br>           
+         
+            <img src="./Image/米5.jpg" style="width: 500px;"><br>
+                
+               
+            幼稚園時因為一次嘴唇受了傷，被載到醫院後縫了好幾針，當天回到幼稚園後，被大家用看到怪物般的目光盯著看，從那一瞬間開始，米津玄師就一直深信「我已經再也不普通了」。除此之外，他特殊的名字也讓他在求學時期遭到同儕的欺負，加上家庭關係的因素，米津玄師在二十歲時，被醫生診斷出患有高功能自閉症，是一種智商中等或較高，自閉傾向不明顯，但是語言表達、人際互動的能力仍有困難的自閉症樣態。米津玄師也曾在訪談中說「在此之前只覺得自己是個來路不明的怪物，被鄭重告知病名後便坦然接受了。」
+            <br>
+            
+            <br>
+        </h3>
+    
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    <!-- 回到頂端 -->
+    
+ 
+    
+</main>
+
+</body>
+<hr>
+<footer>
+    <p>聯絡資訊：</p>
+    <p>資料來源</p>
+    <p></p>
+    <p></p>
+    <p></p>
+</footer>
+</html>

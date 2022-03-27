@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>米津玄師</title>
+    <div class="linkCSS">
+        <link rel="icon" type="image/x-icon" href="./Image/安康魚.jpg">
+        <link rel="stylesheet" href="./Sidenav.css">
+        <link rel="stylesheet" href="./Slideshow.css">
+        <link rel="stylesheet" href="./upTop.css">
+        <link rel="stylesheet" href="./topnav.css">
+
+    </div>
+    <div class="linkJS">
+        <script type="text/javascript" src="./upTop.js"></script>
+        <script type="text/javascript" src="./showSlides.js"></script>
+
+    </div>
+
+
+    <style>
+        header {
+            position: top center;
+            font-size: 80px;
+            margin-top: 50px;
+            margin-left: 30%;
+        }
+        
+        .ideas {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 50px;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        
+        h2 {
+            text-align: left;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ---懸浮式菜單 -->
+    <div id="mySidenav" class="sidenav">
+
+        <a href="./Page.html" id="introduction">引言</a>
+        <a href="./about.html" id="about">生平事蹟</a>
+        <a href="./turningPoint.html" id="turningPoint">轉捩點</a>
+        <a href="./ideas.html" id="ideas">創作理念</a>
+        <a href="./musicStyle.html" id="musicStyle">音樂風格</a>
+        <a href="./AwardRecord.html" id="AwardRecord">代表曲目</a>
+
+    </div>
+
+
+    <!-- 幻燈片 -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./Image/米3.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./Image/米1.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Image/米2.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Image/米4.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <br>
+
+
+    <!-- 自動幻燈片 -->
+    <!-- <script>
+            var slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+    
+           
+        </script> -->
+
+    <!-- 手動切換幻燈片 -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+
+
+
+    <main class="ideas">
+        <h1>創作理念</h1>
+        <h2>
+            米津玄師的創作理念在他的第三張專輯《Bremen》時有了改變，他曾在針對這張專輯的訪談時說：「這次想盡可能地把『自己』這個東西從曲子裡排除，做一張普遍能讓大家都有共鳴的專輯。」因為以前的他是一心想著「我是這樣想的」來創作音樂，然而，從某個時候開始，他開始覺得只用自己心中的東西創作是非常軟弱的行為，而想要更強而有力的活著。 在這之後的三年間，米津玄師再推出新專輯與歌曲的同時，也做了很多的像商業合作、邀請客座歌手、與人合作及提供曲子給別人這樣的事情，並追逐著「想創作擁有普遍性的東西」的目標。對此，〈Lemon〉的爆紅，讓他在今年2018推出的新單曲《Flamingo
+            / TEENAGE RIOT》的訪談中說道，沒有想到會是〈Lemon〉成為了達成這個目標的歌曲，有一種「突然發現好像到了某個終點」的感覺。 針對未來的規劃，米津玄師曾說，從以前開始就有「不變的普通不行」這樣的情節，而現在透過〈Lemon〉彷彿抵達某種終點的狀態，也讓他不知道人生的「第二部」該怎麼辦。對此，他也保持著「因前途莫測，所以才有可以做得到的事」這樣的想法，打算去做些過去未曾做過的事情，抵達誰也沒有看過的地方。
+        </h2>
+  
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- 回到頂端 -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+</main>
+
+
+</body>
+<hr>
+<footer>
+    <p>聯絡資訊：</p>
+    <p>資料來源</p>
+    <p></p>
+    <p></p>
+    <p></p>
+</footer>
+</html>

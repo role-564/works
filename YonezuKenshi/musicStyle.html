@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>米津玄師</title>
+    <div class="linkCSS">
+        <link rel="icon" type="image/x-icon" href="./Image/安康魚.jpg">
+        <link rel="stylesheet" href="./Sidenav.css">
+        <link rel="stylesheet" href="./Slideshow.css">
+        <link rel="stylesheet" href="./upTop.css">
+        <link rel="stylesheet" href="./topnav.css">
+
+    </div>
+    <div class="linkJS">
+        <script type="text/javascript" src="./upTop.js"></script>
+        <script type="text/javascript" src="./showSlides.js"></script>
+
+    </div>
+
+
+    <style>
+        header {
+            position: top center;
+            font-size: 80px;
+            margin-top: 50px;
+            margin-left: 30%;
+        }
+        
+        .musicStyle {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 50px;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        
+        h2 {
+            text-align: left;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ---懸浮式菜單 -->
+    <div id="mySidenav" class="sidenav">
+
+        <a href="./Page.html" id="introduction">引言</a>
+        <a href="./about.html" id="about">生平事蹟</a>
+        <a href="./turningPoint.html" id="turningPoint">轉捩點</a>
+        <a href="./ideas.html" id="ideas">創作理念</a>
+        <a href="./musicStyle.html" id="musicStyle">音樂風格</a>
+        <a href="./AwardRecord.html" id="AwardRecord">代表曲目</a>
+
+    </div>
+
+
+    <!-- 幻燈片 -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./Image/米3.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./Image/米1.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Image/米2.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Image/米4.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <br>
+
+
+    <!-- 自動幻燈片 -->
+    <!-- <script>
+            var slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+    
+           
+        </script> -->
+
+    <!-- 手動切換幻燈片 -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+    <main class="musicStyle">
+        <h1>音樂風格</h1>
+        <h2>
+            ハチ的編曲多半是基於電子合成器與打擊樂之上的，加上在vocaloid聲音的後期製作上喜歡加入很明顯的鑲邊混響效果，製造出輕盈悅動、飄忽不定的“電音場”，從而帶給聽眾不可思議的聽覺感受。這種無法被定性的音樂形式賦予其創作以獨特的魔性，並加入幻想風味的抽象歌詞及sense出眾的PV動畫後，構建起一個只屬於ハチ的異色童話世界。 世界觀非常獨特。<br> 2012年開始，他開始以本名米津玄師發表自己唱的曲子，並於同年發行了第一張正式專輯《diorama》。對此，米津玄師說過，不想藏在VOCALOID的隱形斗篷裡頭，才開始使用本名發表專輯。而從米津玄師陸續發表的專輯《YANKEE》、《Bremen》、《BOOTLEG》，到單曲《Orion》、《Lemon》、〈灰色與青〉等當中都可以發現，現年26歲的他，有著敏銳的感性，對人事物的觀察細膩，並以獨特的創作風格唱出屬於這個世代的孤寂與堅韌而受到喜愛。
+
+        </h2>
+  
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- 回到頂端 -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+</main>
+</body>
+<hr>
+<footer>
+    <p>聯絡資訊：</p>
+    <p>資料來源</p>
+    <p></p>
+    <p></p>
+    <p></p>
+</footer>
+</html>

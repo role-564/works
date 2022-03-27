@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>米津玄師</title>
+    <div class="linkCSS">
+        <link rel="icon" type="image/x-icon" href="./Image/安康魚.jpg">
+        <link rel="stylesheet" href="./Sidenav.css">
+        <link rel="stylesheet" href="./Slideshow.css">
+        <link rel="stylesheet" href="./upTop.css">
+        <link rel="stylesheet" href="./topnav.css">
+
+    </div>
+    <div class="linkJS">
+        <script type="text/javascript" src="./upTop.js"></script>
+        <script type="text/javascript" src="./showSlides.js"></script>
+
+    </div>
+
+
+    <style>
+        header {
+            position: top center;
+            font-size: 80px;
+            margin-top: 50px;
+            margin-left: 30%;
+        }
+        
+        .AwardRecord {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 50px;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        
+        h2 {
+            text-align: left;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ---懸浮式菜單 -->
+    <div id="mySidenav" class="sidenav">
+
+        <a href="./Page.html" id="introduction">引言</a>
+        <a href="./about.html" id="about">生平事蹟</a>
+        <a href="./turningPoint.html" id="turningPoint">轉捩點</a>
+        <a href="./ideas.html" id="ideas">創作理念</a>
+        <a href="./musicStyle.html" id="musicStyle">音樂風格</a>
+        <a href="./AwardRecord.html" id="AwardRecord">代表曲目</a>
+
+    </div>
+
+
+    <!-- 幻燈片 -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./Image/米3.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./Image/米1.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Image/米2.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Image/米4.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <br>
+
+
+    <!-- 自動幻燈片 -->
+    <!-- <script>
+            var slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+    
+           
+        </script> -->
+
+    <!-- 手動切換幻燈片 -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+  
+
+
+        <main class="AwardRecord">
+            <h1>代表曲目</h1>
+
+           <h2>1.<a href="https://youtu.be/SX_ViT4Ra7k">Lemon</a></h2>
+            <h3>米津玄師創作了不少膾炙人口的音樂，但最能代表他人生巔峰的一首曲子，非Lemon不可，這首是電視劇《Unnatural》的主題曲。</h3>
+            
+            
+            <h2>2.<a href="https://youtu.be/UFQEttrn6CQ">感電</a></h2>
+            <h3>
+                〈感電〉MV一推出就在YouTube上推出1小時50分鐘就突破100萬次播放次數，再次刷新米津玄師在推出〈Flamingo〉的3小時17分紀錄！人氣日劇《MIU404》請來星野源和綾野剛兩大人氣男星演出，編劇更是先前打造出《法醫女王》和《月薪嬌妻》的野木亞紀子，超強卡司讓這部日劇6月26日播出第一集時就瞬間登上Twitter世界熱搜第一！而主題曲的部分也再次請來每每為劇製作主題曲就會大爆紅的米津玄師，果然成功製造超強聲勢！</h3>
+           
+
+            <h2>3.<a href="https://youtu.be/Dx_fKPBPYUI">loser</a></h2> 
+          
+            <h3>米津玄師20歲那年被診斷出有高功能自閉症，而從小又被同學排擠的他似乎相當習慣於孤單共處，不過他卻沒有因此而喪志，《Loser》這首歌雖然比喻自己是一個敗犬，但卻也同時像是在鼓舞著人們，不要因為身處深淵當中就喪志。</h3>
+           
+            <h2>4.<a href="https://www.youtube.com/watch?v=-tKVN2mAKRI">打上花火</a></h2>
+           
+           
+            <h3>在米津玄師在紅白爆紅之前，他其實就是以「ハチ」名義投稿多首VOCALOID歌曲而知名的創作歌手，在2017年他的VOCALOID歌曲就在日本Youtube排行榜中10名佔了3名，而其中拿下第一名的就是他與女性歌手「DAOKO」合作的劇場版動畫《煙花》主題曲「打上花火」！</h3>
+            
+            
+            
+            <h2>5.<a href="https://www.youtube.com/watch?v=8nxaZ69ElEc">死神</a></h2>
+            <h3>米津玄師上載〈死神〉MV到Youtube的預訂時間，也是別有心思。米津選擇了6月24日22:13公開，是因為22時兩個2字，相加為「4」，跟日語「死」字同音，「13」也是塔羅牌中的「死神」牌。MV導演永戸鐵也在拍攝事前也做了許多功課，事關〈死神(Shinigami)〉原是米津非常喜歡的古典落語劇目，為此導演也看了無數《死神》劇目作資料蒐集。《死神》故事講述貧困主角一天得到一位死神教路，主角從此可用咒語驅趕其他死神，但只限坐在病人牀尾的死神，牀頭的絕不能趕走，偏偏主角貪圖財富為病危富翁使詐，最後主角的生命蠟燭被換成病人快燒殆的蠟燭，死神輕輕一吹，主角的求救聲一瞬間就消失了。</h3>
+            
+            
+            <h2>6.<a href="https://www.youtube.com/watch?v=7WZ1Kt3zraY">Pale Blue</a></h2>
+            <h3>看着米津玄師最新專輯，也是他第11首單曲〈Pale Blue〉封面，一如以往也是出自米津手筆。對於這鮮艷青藍背景封面，米津早在電視節目「NEWS ZERO」訪問中，透露過其背後意義：「我認為戀愛總是多少帶點自戀（ナルシスト）特質，愛上別人時，也是自我主觀地心裏亂作一團。所以我就用這帶毒性的鮮艷色彩，表現這種主觀元素。」原來唱片封面是第一身主角「墮入愛河的瞬間」視野圖，米津畫的眼裡摻了自戀後看到的戀愛對象。米津玄師的作品就是這樣，從不限於聲音，旋律以外還有畫面有構圖有色彩，歌詞當中有故事有內容也有他的領悟。
+                雖説是講述從頭再愛的情歌，米津也想讓它聽起來帶點要分手了的愁緒，然後花了很長很長時間，去思考何謂戀愛。米津説〈Pale Blue〉是他現時為止音樂創作歷程中，最花心力的一首，之前還做過好幾首不同感覺的版本，給自己打了三次回頭，才有現在這個版本。既是婚姻關係的結束，也是二人關係的新起步，如此複雜的心境，你又能否從米津的歌中感受得到？
+            </h3>
+            <h2>7.<a href="https://www.youtube.com/watch?v=1s84rIhPuhk">海之幽靈</a></h2>
+            <h3>米津玄師為日本知名漫畫家五十嵐大介的《海獸之子》（海獣の子供）漫畫改編電影製作主題曲，在製作〈Lemon〉爆紅前，米津玄師本來就是在製作動漫相關的「VOCALOID」開始小有名氣的，加上他剛好也是《海獸之子》的漫畫粉絲，因此由他來打造這部動畫電影的主題曲是再適合不過的選擇！而這首主題曲〈海の幽霊〉，米津玄師完全下足了功夫，不僅包下水族館一天作為MV首映會的場地，更直接將水族館以各種特效打造成動畫中水底世界，讓參與的人彷彿參與了動畫，加上米津玄師打造音樂的鬼才功力，這支MV一公開就獲得了 4 天又 12 小時內播放量突破 1000 萬次的驚人成績，突破了米津玄師的「個人最快紀錄」！除此之外，這首歌也同時佔據了日本各大音樂排行榜的榜首，米津玄師又再次打造出「現象級」的超強主題曲！</h3>
+
+            <h2>8.<a href="https://youtu.be/Uh6dkL1M9DM">Flamingo</a></h2>
+            <h3>由於〈Flamingo〉充滿和風的旋律以及特殊的唱腔，加上歌詞所使用的字詞，讓許多日本網友在第一時間都將此首歌曲所代表的意義指向「花魁」一職。「花魁」即為日本江戶時代的吉原遊廓（社交場所的一種）裡，對地位最高級遊女的稱呼。由於花魁會穿著華麗的和服，讓許多人不禁聯想歌名〈Flamingo〉所指「鮮豔的紅鶴」，是否就是在暗喻著花魁的形象，加上MV許多的畫面以及歌詞裡的蛛絲馬跡，更增加這一說法的可能性。
+                對於這首〈Flamingo〉，米津玄師曾在廣播節目談到，一開始其實是想要做異國感十足的民謠音樂，結果不知不覺就做成和風感，最後成品居然是像演歌一樣的歌曲，是他自己也沒有想過的事情，這也使得這首歌更添一層神秘感。
+            </h3>
+
+            <h2>9.<a href="https://youtu.be/s582L3gujnw">Paprika</a></h2>
+            
+
+            <h3>這首歌是米津玄師為東京奧運所打造的應援歌曲，雖然東京奧運因為疫情因素不斷延期，但這首歌推出米津玄師親唱版本時也在兩天內迅速破700萬次觀看，絕對是米津玄師的代表作之一！希望今年東京奧運舉行時這首歌仍然能為世界各地的人們帶來能量！
+
+                除了這八首歌曲以外，我們也特別為了你準備米津玄師的精選歌單，聽完再去看演唱會絕對更有感，不聽演唱會也能被這位歌聲相當療癒人心的音樂天才給撫慰！</h3>
+
+
+
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+         <!-- 回到頂端 -->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+   
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    
+</main>  
+
+</body>
+<hr>
+<footer>
+    <p>聯絡資訊：</p>
+    <p>資料來源</p>
+    <p></p>
+    <p></p>
+    <p></p>
+</footer>
+
+</html>

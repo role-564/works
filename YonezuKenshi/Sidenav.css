@@ -1,0 +1,62 @@
+/* Style the links inside the sidenav */
+
+#mySidenav a {
+    position: absolute;
+    /* Position them relative to the browser window */
+    left: -95px;
+    /* Position them outside of the screen */
+    transition: 0.2s;
+    /* Add transition on hover */
+    padding: 15px;
+    /* 15px padding */
+    width: 150px;
+    /* Set a specific width */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 20px;
+    /* Increase font size */
+    color: white;
+    /* White text color */
+    border-radius: 0 5px 5px 0;
+    /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+    left: 0;
+    /* On mouse-over, make the elements appear as they should */
+}
+
+
+/* The about link: 20px from the top with a green background */
+
+#introduction {
+    top: 120px;
+    background-color: rgb(170, 50, 170);
+}
+
+#about {
+    top: 180px;
+    background-color: #04AA6D;
+}
+
+#turningPoint {
+    top: 240px;
+    background-color: #2196F3;
+    /* Blue */
+}
+
+#ideas {
+    top: 300px;
+    background-color: #f44336;
+    /* Red */
+}
+
+#musicStyle {
+    top: 360px;
+    background-color: #555/* Light Black */
+}
+
+#AwardRecord {
+    top: 420px;
+    background-color: rgb(119, 165, 28)/* Light Black */
+}

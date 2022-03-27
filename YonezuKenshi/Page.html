@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>米津玄師</title>
+    <div class="linkCSS">
+        <link rel="icon" type="image/x-icon" href="./Image/安康魚.jpg">
+        <link rel="stylesheet" href="./Sidenav.css">
+        <link rel="stylesheet" href="./Slideshow.css">
+        <link rel="stylesheet" href="./upTop.css">
+        <link rel="stylesheet" href="./topnav.css">
+
+    </div>
+    <div class="linkJS">
+        <script type="text/javascript" src="./upTop.js"></script>
+        <script type="text/javascript" src="./showSlides.js"></script>
+
+    </div>
+
+
+
+    <style>
+        header {
+            font-size: 80px;
+            text-align: center;
+        }
+        
+        .introduction {
+            font-size: 18px;
+            margin-top: 50px;
+            margin-left: 15%;
+            margin-right: 15%;
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: left;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ---懸浮式菜單 -->
+    <div id="mySidenav" class="sidenav">
+
+        <a href="./Page.html" id="introduction">引言</a>
+        <a href="./about.html" id="about">生平事蹟</a>
+        <a href="./turningPoint.html" id="turningPoint">轉捩點</a>
+        <a href="./ideas.html" id="ideas">創作理念</a>
+        <a href="./musicStyle.html" id="musicStyle">音樂風格</a>
+        <a href="./AwardRecord.html" id="AwardRecord">代表曲目</a>
+
+    </div>
+
+
+    <!-- 幻燈片 -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./Image/米3.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./Image/米1.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Image/米2.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Image/米4.jpg" style="width:100%; height:500px">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <br>
+
+    <!-- 自動幻燈片 -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+    <!-- 手動切換幻燈片 -->
+    <!-- <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script> -->
+
+
+
+
+
+    <hr>
+    <main class="introduction">
+        <header>米津玄師 Hachi（ハチ）</header>
+        <h1>引言</h1>
+        <h2>
+            你是否有關注日本樂壇？ 那你是否有聽過米津玄師這號人物？
+            <br> 米津玄師是從網路發跡的日本音樂人， <br> 他既能創作詞曲，也能畫畫，甚至在MV當中挑戰過跳舞， <br> 這樣廣泛的才能讓他被稱作「全方位創作型鬼才歌手」、「十年難得一見的天才」。
+
+        </h2>
+        <img src="./Image/米6.jpg" style="width: 600px;">
+    </main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- 回到頂端 -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+</body>
+<hr>
+<footer>
+    <p>聯絡資訊：</p>
+    <p>資料來源</p>
+    <p></p>
+    <p></p>
+    <p></p>
+</footer>
+</html>

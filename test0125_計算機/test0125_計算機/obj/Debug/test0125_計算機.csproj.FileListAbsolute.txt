@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\bin\Debug\test0125_計算機.exe.config
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\bin\Debug\test0125_計算機.exe
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\bin\Debug\test0125_計算機.pdb
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\obj\Debug\test0125_計算機.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\obj\Debug\test0125_計算機.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\obj\Debug\test0125_計算機.Form1.resources
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\obj\Debug\test0125_計算機.Properties.Resources.resources
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\obj\Debug\test0125_計算機.csproj.GenerateResource.cache
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\obj\Debug\test0125_計算機.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\obj\Debug\test0125_計算機.exe
+C:\Users\user\Desktop\1214\c#\Lab\test0125_計算機\test0125_計算機\obj\Debug\test0125_計算機.pdb
